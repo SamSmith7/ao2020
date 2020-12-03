@@ -3,6 +3,7 @@ extern crate aoc2020;
 use std::env;
 use aoc2020::day1;
 use aoc2020::day2;
+use aoc2020::day3;
 
 #[derive(Debug)]
 struct AocResult {
@@ -33,6 +34,12 @@ fn main() {
             AocResult {
                 part1: day2::part1(),
                 part2: day2::part2()
+            }
+        },
+        "day3" => {
+            AocResult {
+                part1: day3::part1(),
+                part2: day3::part2()
             }
         },
         _ => AocResult {
